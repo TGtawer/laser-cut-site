@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /send.php
+
+# TODO(#6) Подставить домен
+Sitemap: https://[домен]/sitemap.xml

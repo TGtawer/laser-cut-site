@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO(#6) Подставить домен -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://[домен]/</loc>
+  </url>
+  <url>
+    <loc>https://[домен]/privacy.html</loc>
+  </url>
+</urlset>
