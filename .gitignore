@@ -1,0 +1,7 @@
+# Реальные настройки формы (пароль SMTP, токен бота). В репозитории — config.example.php
+config.php
+
+# Системные файлы
+Thumbs.db
+desktop.ini
+.DS_Store
