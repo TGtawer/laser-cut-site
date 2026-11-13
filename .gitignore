@@ -1,6 +1,9 @@
 # Реальные настройки формы (пароль SMTP, токен бота). В репозитории — config.example.php
 config.php
 
+# ТЗ с рабочими заметками — только локально
+CLAUDE.md
+
 # Системные файлы
 Thumbs.db
 desktop.ini
