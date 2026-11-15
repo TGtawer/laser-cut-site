@@ -460,9 +460,18 @@ a:hover { color: var(--accent-hover); }
 
 @media (min-width: 640px) {
   .services { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  /* Нечётная последняя карточка — на всю ширину, чтобы ряд не обрывался */
+  .service:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
+/* По 3 карточки в ряд на сетке из 6 колонок. Если в последнем ряду
+   остаётся 2 карточки — они делят его пополам, если 1 — занимает весь ряд */
 @media (min-width: 1080px) {
-  .services { grid-template-columns: repeat(4, 1fr); }
+  .services { grid-template-columns: repeat(6, 1fr); }
+  .service,
+  .service:last-child:nth-child(odd) { grid-column: span 2; }
+  .service:nth-last-child(2):nth-child(3n+1),
+  .service:last-child:nth-child(3n+2) { grid-column: span 3; }
+  .service:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
 }
 
 /* ---------- Оборудование ---------- */
@@ -488,8 +497,13 @@ a:hover { color: var(--accent-hover); }
 .spec-list dt { color: var(--on-dark-muted); }
 .spec-list dd { margin: 0; font-weight: 600; text-align: right; }
 
+/* Та же сетка, что у услуг: по 3 в ряд, неполный последний ряд растягивается */
 @media (min-width: 768px) {
-  .equipment { grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .equipment { grid-template-columns: repeat(6, 1fr); gap: 20px; }
+  .spec-card { grid-column: span 2; }
+  .spec-card:nth-last-child(2):nth-child(3n+1),
+  .spec-card:last-child:nth-child(3n+2) { grid-column: span 3; }
+  .spec-card:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
 }
 
 /* ---------- Как заказать ---------- */

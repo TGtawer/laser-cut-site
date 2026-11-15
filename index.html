@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Лазерная резка металла во Владивостоке — ТСМ ДВ</title>
-  <meta name="description" content="Лазерная резка листового металла до 10 мм и труб, гибка, изготовление металлоконструкций во Владивостоке. Расчёт по чертежам DXF, STEP, IGES.">
+  <meta name="description" content="Лазерная резка листового металла до 10 мм и труб, гибка, сварка, изготовление металлоконструкций во Владивостоке. Расчёт по чертежам DXF, STEP, IGES.">
   <meta name="theme-color" content="#1F2328">
   <!-- TODO(#6) Черновик на GitHub Pages закрыт от поисковиков. Убрать эту строку при запуске на своём домене -->
   <meta name="robots" content="noindex, nofollow">
@@ -15,7 +15,7 @@
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="ТСМ ДВ">
   <meta property="og:title" content="Лазерная резка металла во Владивостоке — ТСМ ДВ">
-  <meta property="og:description" content="Листовой рез до 10 мм, лазерная резка труб, гибка на прессе, изготовление металлоконструкций под заказ.">
+  <meta property="og:description" content="Листовой рез до 10 мм, лазерная резка труб до 240 мм, гибка на прессе, сварка, изготовление металлоконструкций под заказ.">
   <meta property="og:url" content="https://[домен]/">
   <meta property="og:image" content="https://[домен]/assets/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -38,7 +38,8 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "ТСМ ДВ",
-    "description": "Цех лазерной резки и обработки металла: листовая лазерная резка до 10 мм, лазерная резка труб, гибка, изготовление металлоконструкций.",
+    "description": "Цех лазерной резки и обработки металла: листовая лазерная резка до 10 мм, лазерная резка труб до 240 мм, гибка листа и арматуры, аргонодуговая и точечная сварка, изготовление металлоконструкций.",
+    "foundingDate": "2019",
     "telephone": "+7-914-338-60-71",
     "email": "tcm.dv-laser25@ya.ru",
     "address": {
@@ -48,7 +49,7 @@
       "addressRegion": "Приморский край",
       "addressCountry": "RU"
     },
-    "areaServed": "Владивосток"
+    "areaServed": ["Владивосток", "Приморский край"]
   }
   </script>
 </head>
@@ -118,7 +119,7 @@
       <div class="container hero__inner">
         <p class="hero__eyebrow">Цех лазерной резки и обработки металла</p>
         <h1 class="hero__title" id="hero-title">Лазерная резка металла и металлоконструкции во Владивостоке</h1>
-        <p class="hero__lead">Листовой рез до 10 мм, лазерная резка труб, гибка на прессе, изготовление металлоконструкций под заказ</p>
+        <p class="hero__lead">Листовой рез до 10 мм, лазерная резка труб до 240 мм, гибка на прессе, сварка, изготовление металлоконструкций под заказ</p>
         <div class="hero__actions">
           <a class="btn btn--primary btn--lg" href="#order">Отправить чертёж на расчёт</a>
           <a class="btn btn--ghost btn--lg" href="tel:+79143386071">
@@ -133,7 +134,7 @@
           </li>
           <li>
             <svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>
-            Доставка по Владивостоку
+            Доставка по Владивостоку и Приморскому краю
           </li>
         </ul>
       </div>
@@ -160,7 +161,7 @@
 
           <article class="card service">
             <h3 class="service__title">Лазерная резка труб</h3>
-            <p class="service__desc">Труборез</p>
+            <p class="service__desc">Труборез, трубы до 240 мм</p>
             <dl class="service__meta">
               <div><dt>Формат файла</dt><dd>STEP / IGES</dd></div>
               <!-- TODO(#3) -->
@@ -171,13 +172,25 @@
 
           <article class="card service">
             <h3 class="service__title">Гибка металла</h3>
-            <p class="service__desc">Листогибочный пресс</p>
+            <p class="service__desc">Листогибочный пресс 40 т, гибка арматуры до 20 мм</p>
             <dl class="service__meta">
               <div><dt>Формат файла</dt><dd>DXF</dd></div>
               <!-- TODO(#3) -->
               <div><dt>Цена</dt><dd>от [___] ₽</dd></div>
             </dl>
             <a class="btn btn--primary service__btn" href="#order" data-service="Гибка металла">Рассчитать</a>
+          </article>
+
+          <article class="card service">
+            <h3 class="service__title">Сварочные работы</h3>
+            <p class="service__desc">Аргонодуговая и точечная сварка</p>
+            <dl class="service__meta">
+              <!-- TODO(#8) -->
+              <div><dt>Формат файла</dt><dd>[уточняется]</dd></div>
+              <!-- TODO(#3) -->
+              <div><dt>Цена</dt><dd>[по расчёту]</dd></div>
+            </dl>
+            <a class="btn btn--primary service__btn" href="#order" data-service="Сварочные работы">Рассчитать</a>
           </article>
 
           <article class="card service">
@@ -195,7 +208,7 @@
       </div>
     </section>
 
-    <!-- 4.4 Оборудование и возможности. TODO(#2) Все характеристики — заглушки -->
+    <!-- 4.4 Оборудование и возможности. TODO(#2) Часть характеристик — заглушки -->
     <section class="section section--dark" id="equipment" aria-labelledby="equipment-title">
       <div class="container">
         <div class="section__head">
@@ -204,7 +217,7 @@
 
         <div class="equipment">
           <article class="spec-card">
-            <h3 class="spec-card__title">Лазерный станок</h3>
+            <h3 class="spec-card__title">Станок лазерной резки листа</h3>
             <dl class="spec-list">
               <!-- TODO(#2) -->
               <div><dt>Мощность</dt><dd>[___] кВт</dd></div>
@@ -215,10 +228,10 @@
           </article>
 
           <article class="spec-card">
-            <h3 class="spec-card__title">Труборез</h3>
+            <h3 class="spec-card__title">Станок лазерной резки труб</h3>
             <dl class="spec-list">
+              <div><dt>Размер трубы</dt><dd>до 240 мм</dd></div>
               <!-- TODO(#2) -->
-              <div><dt>Диаметр труб</dt><dd>[___–___] мм</dd></div>
               <div><dt>Профили</dt><dd>[уточняется]</dd></div>
               <div><dt>Длина заготовки</dt><dd>до [___] мм</dd></div>
             </dl>
@@ -227,9 +240,23 @@
           <article class="spec-card">
             <h3 class="spec-card__title">Листогибочный пресс</h3>
             <dl class="spec-list">
+              <div><dt>Усилие</dt><dd>40 т</dd></div>
               <!-- TODO(#2) -->
-              <div><dt>Усилие</dt><dd>[___] т</dd></div>
               <div><dt>Длина гиба</dt><dd>до [___] мм</dd></div>
+            </dl>
+          </article>
+
+          <article class="spec-card">
+            <h3 class="spec-card__title">Станок гибки арматуры</h3>
+            <dl class="spec-list">
+              <div><dt>Диаметр арматуры</dt><dd>до 20 мм</dd></div>
+            </dl>
+          </article>
+
+          <article class="spec-card">
+            <h3 class="spec-card__title">Сварка</h3>
+            <dl class="spec-list">
+              <div><dt>Виды сварки</dt><dd>аргонодуговая, точечная</dd></div>
             </dl>
           </article>
         </div>
@@ -259,7 +286,8 @@
           </li>
           <li class="step">
             <span class="step__num" aria-hidden="true">04</span>
-            <h3 class="step__title">Доставка по Владивостоку</h3>
+            <h3 class="step__title">Доставим</h3>
+            <p class="step__text">По Владивостоку и Приморскому краю, возможна отправка в регионы</p>
             <!-- TODO(#9) -->
             <p class="step__text">[Самовывоз — уточняется]</p>
           </li>
@@ -336,11 +364,11 @@
           </li>
           <li class="feature">
             <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></span>
-            <p class="feature__text">Резка, гибка и изготовление конструкций в одном месте</p>
+            <p class="feature__text">Резка, гибка, сварка и изготовление конструкций в одном месте</p>
           </li>
           <li class="feature">
             <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
-            <p class="feature__text">Доставка по Владивостоку</p>
+            <p class="feature__text">Доставка по Владивостоку и Приморскому краю, отправка в регионы</p>
           </li>
           <li class="feature">
             <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
@@ -349,11 +377,10 @@
           </li>
         </ul>
 
-        <!-- TODO(#4) Блок цифр скрыт, пока нет данных. Чтобы показать — убрать атрибут hidden -->
-        <div class="stats" hidden>
+        <div class="stats">
           <div class="stat">
-            <span class="stat__value">[___]</span>
-            <span class="stat__label">лет на рынке</span>
+            <span class="stat__value">с 2019</span>
+            <span class="stat__label">года на рынке</span>
           </div>
         </div>
       </div>
@@ -406,6 +433,7 @@
               <option>Лазерная резка листового металла</option>
               <option>Лазерная резка труб</option>
               <option>Гибка металла</option>
+              <option>Сварочные работы</option>
               <option>Изготовление металлоконструкций</option>
               <option>Другое</option>
             </select>
