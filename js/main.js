@@ -6,7 +6,7 @@
   var ALLOWED_EXT = ['dxf', 'step', 'stp', 'iges', 'igs'];
   var MAX_FILES = 10;
   var MAX_TOTAL = 20 * 1024 * 1024; // 20 МБ суммарно
-  var PHONE_TEXT = '+7 (914) 338-60-71';
+  var PHONE_TEXT = '+7 (914) 790-21-95';
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };

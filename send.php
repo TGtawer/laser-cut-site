@@ -18,7 +18,7 @@ header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
 header('X-Content-Type-Options: nosniff');
 
-const PHONE_TEXT = '+7 (914) 338-60-71';
+const PHONE_TEXT = '+7 (914) 790-21-95';
 const MSG_SUCCESS = 'Мы свяжемся с вами, чтобы уточнить детали и стоимость.';
 const MSG_FAIL = 'Попробуйте ещё раз чуть позже или позвоните нам: ' . PHONE_TEXT . '.';
 
